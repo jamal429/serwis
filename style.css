@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #4C5053; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    color:black;
+}
+#container{
+    display: inline-block;
+    width: 30%;
+    height: 80vh;
+}
+header #baner{
+    height: 100%;
+    width: 100px;
+    text-align: center;
+}
+#ikona{
+    height: 7vh;
+    width: 7vh;
+    background-image: url(ikona.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wynik:last-child{
+    margin-bottom: 10px;
+}
+#lewygorny{
+width: 100%;
+height: 50%;
+float: left;
+background-color: #A7AFB5;
+}
+#lewygorny input{
+border-radius: 10px;
+height: 4vh;
+width: 80%;
+margin: 15px;
+}
+#lewydolny{
+    width: 100%;
+    height: 50%;
+    background-color: #A7AFB5;
+    float: left;
+    padding: 15px;
+}
+#lewydolny input{
+    border-radius: 5px;
+    background-color: aliceblue;
+    width:100%
+}
+#lewydolny select,option{
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+#głowny{
+    background-color: #838A8F;
+    width: 70%;
+    height: 80vh;
+    float: right;
+    overflow-y: scroll; 
+}
+.wynik{
+    width: 60%;
+    height: 170px;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+.wynik input{
+    width: 100px;
+    height: 45px;
+    background: rebeccapurple;
+    border-radius: 5px;
+    text-align: center;
+}
+.zdjecie{
+    width: 250px;
+    height: 120px;
+    border: 1px solid black;
+    background-image: url(auto.png);
+    background-size: cover;
+    background-position: center;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+footer{
+    background-color: #4C5053;
+    float: left;
+    width: 100%;
+    height: 10vh;
+    margin-top:-6px;
+}
+textarea {
+    max-width: 700px;
+    background-color: #CAD4DB;
+    border: 0px solid black;
+  }
+  #lewygorny input {
+    background-color: #CAD4DB;
+    border: 2px solid #4C5053;
+  }
+  select {
+    background-color: #CAD4DB ;
+    border: 0px solid black;
+  }
+  option {
+    background-color: #CAD4DB;
+    border: 0px solid black;
+  }
+@media screen and (max-width: 768px) 
+{   
+    #container{
+        width: 100%;
+        height: 250px;
+    }
+    #lewygorny {
+        width: 100%;
+        height: 40px;
+    }
+    footer{
+        display: none;
+    }
+    #lewydolny {
+        width: 100%;
+        height: 210px;
+        float: left;
+        display: flex;
+        justify-content: center;
+    } 
+    #głowny {
+        width: 100%;
+        height: 555px;
+        margin-top:-6px;
+        display: flexbox;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .wynik{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    #lewygorny input{
+        width: 100%;
+        margin: 0px;
+    }
+}
